@@ -1,0 +1,23 @@
+.color-nav {
+  background-color:wheat;
+}
+.text-nav {
+  font-style:italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font: size 200px;
+}
+.head-nav {
+  margin-left: 250px;
+}
+.sec-nav {
+  margin-left: 50px;
+}
+.container-fluid {
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
+}
+.img-test{
+  width: 100%;
+}
