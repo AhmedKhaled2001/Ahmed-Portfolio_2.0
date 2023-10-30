@@ -11,7 +11,7 @@ function App() {
     });
   };
   return (
-    <div className="container-fluid">
+    <div className="container-fluid color-nav">
       <div className="row">
         <div className="col">
           <NavBar onAboutHandler={()=>ScrollToSection(aboutRef)}/>
