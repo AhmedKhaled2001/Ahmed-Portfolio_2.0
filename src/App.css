@@ -4,7 +4,7 @@
 .text-nav {
   font-style:italic;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font: size 200px;
+  font-size:150%;
 }
 .head-nav {
   margin-left: 250px;
@@ -20,4 +20,15 @@
 }
 .img-test{
   width: 100%;
+}
+.aboutme-header {
+  font-style:italic;
+  text-align: center;
+  font-size:300%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.aboutme-desc {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:200%;
 }

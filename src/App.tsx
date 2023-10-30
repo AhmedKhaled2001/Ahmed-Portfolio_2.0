@@ -10,14 +10,25 @@ function App() {
       </div>
       <div className="row">
         <div className="col">
-            <img className = "img-test" src="https://reactjs.org/logo-og.png" alt="Bootstrap" />
+          <img
+            className="img-test"
+            src="https://reactjs.org/logo-og.png"
+            alt="Bootstrap"
+          />
         </div>
       </div>
       <div className="row">
         <div className="col">
-            <h1>
-              Hello WOrl
-            </h1>
+          <div className="container">
+            <h1 className="aboutme-header"> About Me </h1>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <div className="container">
+            <h1 className="aboutme-desc"> ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good </h1>
+          </div>
         </div>
       </div>
     </div>
