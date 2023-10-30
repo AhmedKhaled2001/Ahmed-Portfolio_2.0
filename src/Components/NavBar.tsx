@@ -1,4 +1,8 @@
-function NavBar() {
+interface Props {
+  onAboutHandler : () => void;
+}
+
+function NavBar({onAboutHandler}:Props) {
   return (
     <nav className="navbar navbar-expand-lg color-nav">
       <div className="container-fluid">
@@ -8,7 +12,7 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 sec-nav">
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#">
+              <a className="nav-link " onClick={()=>onAboutHandler()} aria-current="page" href="#">
                 About
               </a>
             </li>

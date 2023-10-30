@@ -1,11 +1,20 @@
+import { useRef } from "react";
 import NavBar from "./Components/NavBar";
 
 function App() {
+
+  const aboutRef = useRef(null);
+  const ScrollToSection = (elementRef:any) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior:"smooth",
+    });
+  };
   return (
     <div className="container-fluid">
       <div className="row">
         <div className="col">
-          <NavBar />
+          <NavBar onAboutHandler={()=>ScrollToSection(aboutRef)}/>
         </div>
       </div>
       <div className="row">
@@ -20,14 +29,14 @@ function App() {
       <div className="row">
         <div className="col">
           <div className="container">
-            <h1 className="aboutme-header"> About Me </h1>
+            <h1  className="aboutme-header"> About Me </h1>
           </div>
         </div>
       </div>
       <div className="row">
         <div className="col">
           <div className="container">
-            <h1 className="aboutme-desc"> ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good </h1>
+            <h1 ref = {aboutRef} className="aboutme-desc"> ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good ahmed is very good </h1>
           </div>
         </div>
       </div>
