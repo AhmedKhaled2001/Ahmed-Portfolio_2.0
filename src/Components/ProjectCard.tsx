@@ -1,7 +1,13 @@
 import { useState } from "react";
 import Tag from "./Tag";
 import {motion} from "framer-motion"
-function ProjectCard() {
+
+interface Props
+{
+  tags: String[];
+}
+
+function ProjectCard({tags}:Props) {
   const [isSelected, setSelected] = useState(false);
   function selectedClass() {
     if (isSelected && isSelected != null) return "img-border-hovered";
