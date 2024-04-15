@@ -1,13 +1,15 @@
 
 
+interface Props
+{
+  tagName: String;
+}
 
-
-
-function Tag() {
+function Tag({tagName}: Props) {
   return (
     <div className="tag-background">
       <div>
-        <p className="text-tag">C++</p>
+        <p className="text-tag">{tagName}</p>
       </div>
     </div>
   );

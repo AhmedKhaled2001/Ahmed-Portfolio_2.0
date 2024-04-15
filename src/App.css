@@ -90,11 +90,11 @@
 }
 .tag-background {
   align-self: center;
-  width: 150%;
+  width: 110%;
   height: 60%;
   background-color: rgb(241, 242, 242);
   border: .5px;
-  border-radius: 10%;
+  border-radius: 8%;
   border-style: solid;
 }
 .text-tag {
@@ -115,4 +115,9 @@
   color:rgb(255, 255, 255);
   font-weight: 300;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-div{
+  
+  max-width: 500px;
+  max-height: 700px;
 }

@@ -7,7 +7,18 @@ import "./fonts/Dosis-Light.ttf";
 import "./fonts/Dosis-Medium.ttf";
 import "./fonts/Dosis-Regular.ttf";
 
+type Card = {
+Name : String;
+Tags : String[];
+Desc : String;
+Background : string;
+};
+
+
 function App() {
+  let phIcon: string = "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt6ce962f552812df5/62d6bd83c4f39a1084ff5bef/GettyImages-1409223178.jpg?format=pjpg&auto=webp&width=1920&quality=60";
+  let ThoughtsCard: Card = {Name: "Thoughts", Tags: ["C++", "Blueprints", "Unreal Engine", "In Progress"], Desc : "Very good game!", Background: phIcon};
+  let schoolProjects:Card[] = [ThoughtsCard];
   const aboutRef = useRef(null);
   const ScrollToSection = (elementRef: any) => {
     window.scrollTo({
@@ -74,48 +85,32 @@ function App() {
         <div className="row">
           <div className="col schoolprojectcards-header">
           <div className="row">
-            <div className="col">
-              <div className="container">
-                <ProjectCard />
+          {schoolProjects.map((item) => (
+            <div className="col ">
+              <div className="container card-div">
+                <ProjectCard tags = {item.Tags} desc={item.Desc} icon={item.Background}/>
               </div>
             </div>
-            <div className="col">
-              <div className="container">
-                <ProjectCard />
-              </div>
-            </div>
-            <div className="col">
-              <div className="container">
-                <ProjectCard />
-              </div>
-            </div>
-            <div className="col">
-              <div className="container">
-                <ProjectCard />
-              </div>
-            </div>
+          ))}
             </div>
           </div>
         </div>
       </div>
       <div className="row">
         <div className="col">
-          <div className="container">
+          <div className="container ">
             <h1 className="aboutme-headerText"> Personal Projects </h1>
           </div>
         </div>
       </div>
       <div className="row">
-        <div className="col">
-          <div className="container">
-            <ProjectCard />
-          </div>
-        </div>
-        <div className="col">
-          <div className="container">
-            <ProjectCard />
-          </div>
-        </div>
+      {schoolProjects.map((item) => (
+            <div className="col ">
+              <div className="container card-div">
+                <ProjectCard tags = {item.Tags} desc={item.Desc} icon={item.Background}/>
+              </div>
+            </div>
+          ))}
       </div>
     </div>
   );
