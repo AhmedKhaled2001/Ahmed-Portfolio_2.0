@@ -48,6 +48,9 @@ function ProjectPoints() {
           <p className="project-list-desc project-points-r"> Solo  </p>
         </div>
       </div>
+      
+
+
     </div>
     </div>
   );
