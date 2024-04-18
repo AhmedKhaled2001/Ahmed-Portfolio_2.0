@@ -10,7 +10,6 @@ function ThoughtsPage() {
           <div className="col ">
             <div className="container">
             <ProjectList/>
-              
             </div>
           </div>
         </div>
