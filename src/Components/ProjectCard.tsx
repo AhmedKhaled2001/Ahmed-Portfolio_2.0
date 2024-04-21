@@ -22,7 +22,7 @@ function ProjectCard({ tags, desc, icon }: Props) {
       onMouseEnter={() => setSelected(true)}
       className="list-group"
     >
-      <Link to = "Thoughts">
+      <Link to = "../Thoughts">
       <motion.img
         animate={{ scale: isSelected ? 1 : 1 }}
         className={selectedClass()}
@@ -38,18 +38,19 @@ function ProjectCard({ tags, desc, icon }: Props) {
             </Link>
       
       <div className="container tag-container">
-        <div className="row justify-content-start">
           {tags.map((item) => (
-            <div className="col-md-3">
+            <div className="tag-content ">
               <Tag tagName={item} />
             </div>
           ))}
+      </div>
+      <div className="container card-desc">
+        <div className="">
+        <p className="card-desctxt">{desc}</p>
+
         </div>
       </div>
 
-      <div className="card-desc">
-        <p className="card-desctxt">{desc}</p>
-      </div>
     </motion.ul>
   );
 }

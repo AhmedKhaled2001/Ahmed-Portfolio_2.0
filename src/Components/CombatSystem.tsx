@@ -1,6 +1,8 @@
+import CombatSysVid from "../assets/CombatSystem.mp4";
 function CombatSystem() {
   return (
     <div className="project-desc-nav">
+      <video src={CombatSysVid} autoPlay loop muted className="project-list-img"/>
       <p className="project-desc-text">
         Combat was one of the most fun areas I explored with creating this game,
         where it was my first time attempting to create a full combo melee

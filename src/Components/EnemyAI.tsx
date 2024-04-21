@@ -1,6 +1,8 @@
+import AIVid from "../assets/AI.mp4";
 function EnemyAI() {
   return (
     <div className="project-desc-nav">
+      <video src={AIVid} autoPlay loop muted className="project-list-img"/>
       <p className="project-desc-text">
         I implemented the Enemy AI using Unreal Engine's Behavior Tree system.
         The behavior tree I created is fairly simple, and it's used for most of

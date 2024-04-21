@@ -13,8 +13,8 @@ function ProjectPoints() {
         </div>
       </div>
     </div>
-    <div className="row ">
-      <div className="col ">
+    <div className="row">
+      <div className="col">
         <div className="container">
           <p className="project-list-desc project-points-l"> Project Progress </p>
         </div>

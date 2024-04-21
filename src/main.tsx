@@ -11,11 +11,25 @@ import ThoughtsPage from './Pages/ThoughtsPage.tsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App launchCase={0}/>,
   },
   {
     path:"Thoughts",
     element: <ThoughtsPage/>,
+  },
+  {
+    path:"/About",
+    element: <App launchCase={1}/>,
+  },
+  {
+    path:"/PersonalProjects",
+    element: <App launchCase={2}/>,
+
+  },
+  {
+    path:"/SchoolProjects",
+    element: <App launchCase={3}/>,
+
   },
 ]);
 

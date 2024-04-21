@@ -1,6 +1,8 @@
+import ProgVid from "../assets/Progression.mp4";
 function ProgressionSystem() {
   return (
     <div className="project-desc-nav">
+      <video src={ProgVid} autoPlay loop muted className="project-list-img"/>
       <p className="project-desc-text">
       The progression system for the game was an area I hadn't explored yet before creating this game. Since the game is a rougelike the progression system had to be randomized
       and unique for each run, so the way I designed and implemented a progression system was by rewarding the player when clearing a room by offering 3 different stat upgrades and allowing the player to choose 

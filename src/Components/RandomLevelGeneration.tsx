@@ -1,6 +1,9 @@
+
+import levelGenShow from "../assets/LevelGenShow.mp4";
 function RandomLevelGeneration() {
   return (
     <div className="project-desc-nav">
+      <video src={levelGenShow} autoPlay loop muted className="project-list-img"/>
       <p className="project-desc-text">
         I designed and implemented a random level generation system for
         "Thoughts," incorporating variables to enhance design flexibility. These
