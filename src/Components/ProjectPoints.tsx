@@ -1,4 +1,13 @@
-function ProjectPoints() {
+
+interface Props
+{
+  projectType : string;
+  projectProgress: string;
+  techUsed: string;
+  TeamSize : string;
+}
+
+function ProjectPoints({projectType, projectProgress, techUsed, TeamSize} : Props) {
   return (
     <div>
     <div className="row ">
@@ -9,7 +18,7 @@ function ProjectPoints() {
       </div>
       <div className="col ">
         <div className="container">
-          <p className="project-list-desc project-points-r"> Personal Project </p>
+          <p className="project-list-desc project-points-r"> {projectType} </p>
         </div>
       </div>
     </div>
@@ -21,7 +30,7 @@ function ProjectPoints() {
       </div>
       <div className="col ">
         <div className="container">
-          <p className="project-list-desc project-points-r"> Under Development </p>
+          <p className="project-list-desc project-points-r"> {projectProgress} </p>
         </div>
       </div>
     </div>
@@ -33,7 +42,7 @@ function ProjectPoints() {
       </div>
       <div className="col ">
         <div className="container">
-          <p className="project-list-desc project-points-r"> Unreal Engine 5 C++/Blueprints </p>
+          <p className="project-list-desc project-points-r"> {techUsed} </p>
         </div>
       </div>
     </div>
@@ -45,7 +54,7 @@ function ProjectPoints() {
       </div>
       <div className="col ">
         <div className="container">
-          <p className="project-list-desc project-points-r"> Solo  </p>
+          <p className="project-list-desc project-points-r"> {TeamSize}  </p>
         </div>
       </div>
       

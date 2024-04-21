@@ -6,9 +6,10 @@ interface Props {
   tags: String[];
   desc: String;
   icon: string;
+  onClickLink: string;
 }
 
-function ProjectCard({ tags, desc, icon }: Props) {
+function ProjectCard({ tags, desc, icon, onClickLink}: Props) {
   const [isSelected, setSelected] = useState(false);
   function selectedClass() {
     if (isSelected && isSelected != null) return "img-border-hovered";
@@ -22,7 +23,7 @@ function ProjectCard({ tags, desc, icon }: Props) {
       onMouseEnter={() => setSelected(true)}
       className="list-group"
     >
-      <Link to = "../Thoughts">
+      <Link to = {onClickLink}>
       <motion.img
         animate={{ scale: isSelected ? 1 : 1 }}
         className={selectedClass()}

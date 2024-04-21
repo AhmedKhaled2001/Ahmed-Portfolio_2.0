@@ -1,23 +1,30 @@
 import ProjectPoints from "./ProjectPoints";
-import CollapsibleButton from "./CollapsibleButton";
-import RandomLevelGeneration from "./RandomLevelGeneration";
-import EnemyAI from "./EnemyAI";
-import CombatSystem from "./CombatSystem";
-import ProgressionSystem from "./ProgressionSystem";
-import UI from "./UI";
-import EnemySpawningSystem from "./EnemySpawningSystem";
-
-function ProjectList() {
+type PP = 
+{
+  projectType : string;
+  projectProgress: string;
+  techUsed: string;
+  TeamSize : string;
+};
+interface Props
+{
+  ProjPoints: PP;
+  Title: string;
+  YTShowcaseLink: string;
+  ButtonsLists: React.ReactNode[];
+}
+function ProjectList({ProjPoints, Title, YTShowcaseLink, ButtonsLists}:Props) {
   return (
     <div className="project-list">
       <div>
-        <p className="project-list-header"> Thoughts</p>
-        <ProjectPoints />
+        <p className="project-list-header"> {Title}</p>
+        <ProjectPoints projectType= {ProjPoints.projectType} projectProgress= {ProjPoints.projectProgress} 
+        TeamSize={ProjPoints.TeamSize} techUsed={ProjPoints.techUsed}/>
         <div className="row ">
           <div className="col">
             <div className="ratio ratio-16x9">
               <iframe
-                src="https://www.youtube.com/embed/zR-WfqmdfQE"
+                src= {YTShowcaseLink}
                 title="YouTube video"
               ></iframe>
             </div>
@@ -38,7 +45,10 @@ function ProjectList() {
             <p className="project-list-subheader "> Features </p>
           </div>
         </div>
-        <CollapsibleButton
+        {ButtonsLists.map((item) => (
+            item
+          ))}
+        {/* <CollapsibleButton
           buttonContent={<RandomLevelGeneration />}
           buttonName="Random Level Generation"
         />
@@ -55,7 +65,7 @@ function ProjectList() {
           buttonContent={<EnemySpawningSystem />}
           buttonName="Enemy Spawning System"
         />
-        <CollapsibleButton buttonContent={<UI />} buttonName="UI" />
+        <CollapsibleButton buttonContent={<UI />} buttonName="UI" /> */}
       </div>
     </div>
   );
