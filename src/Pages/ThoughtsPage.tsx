@@ -49,7 +49,7 @@ function ThoughtsPage() {
           <div className="container-fluid color-nav2 navbar-property">
             <NavBar onAboutHandler={() => navigate("/about")} onSchoolProjectsHandler={() => navigate("/SchoolProjects")} 
             onPersonalProjectsHandler={() => navigate("/PersonalProjects")} onContactHandler={() => navigate("/Contact")}
-             onResumeHandler={() => navigate("/PersonalProjects")}/>
+             />
           </div>
         <div className="row ">
           <div className="col ">

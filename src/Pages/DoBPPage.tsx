@@ -39,7 +39,7 @@ function DoBPPage() {
           <div className="container-fluid color-nav2 navbar-property">
             <NavBar onAboutHandler={() => navigate("/about")} onSchoolProjectsHandler={() => navigate("/SchoolProjects")} 
             onPersonalProjectsHandler={() => navigate("/PersonalProjects")} onContactHandler={() => () => 1}
-             onResumeHandler={() => navigate("/PersonalProjects")}/>
+             />
           </div>
         <div className="row ">
           <div className="col ">
