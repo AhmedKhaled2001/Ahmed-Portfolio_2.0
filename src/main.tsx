@@ -8,6 +8,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ThoughtsPage from './Pages/ThoughtsPage.tsx'
+import DoBPPage from './Pages/DoBPPage.tsx'
+import QuantumBlitzPage from './Pages/QuantumBlitzPage.tsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +21,14 @@ const router = createBrowserRouter([
     element: <ThoughtsPage/>,
   },
   {
+    path:"DORBP",
+    element: <DoBPPage/>,
+  },
+  {
+    path:"QuantumBlitz",
+    element: <QuantumBlitzPage/>,
+  },
+  {
     path:"/About",
     element: <App launchCase={1}/>,
   },
@@ -26,9 +37,15 @@ const router = createBrowserRouter([
     element: <App launchCase={2}/>,
 
   },
+
   {
     path:"/SchoolProjects",
     element: <App launchCase={3}/>,
+
+  },
+  {
+    path:"/Contact",
+    element: <App launchCase={4}/>,
 
   },
 ]);

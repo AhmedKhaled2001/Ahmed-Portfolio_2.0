@@ -8,6 +8,8 @@ import CombatSystem from "../Components/CombatSystem";
 import ProgressionSystem from "../Components/ProgressionSystem";
 import UI from "../Components/UI";
 import EnemySpawningSystem from "../Components/EnemySpawningSystem";
+import CloudinaryVideo from "../Components/CloudinaryVideo";
+
 type PP = 
 {
   projectType : string;
@@ -16,6 +18,7 @@ type PP =
   TeamSize : string;
 };
 function ThoughtsPage() {
+
   let projPoints : PP = {
     projectProgress : "In Development", projectType: "Personal Project", TeamSize: "Solo", techUsed : "Unreal Engine 4/5 C++/Blueprints"
   };
@@ -41,17 +44,19 @@ function ThoughtsPage() {
   return (
     <div className=" ProjectPage">
 
-      <div>
-
+      <CloudinaryVideo styling="vidBG" videoID="Thoughts_BG"/>
+        <div className=" ProjectPageQB">
           <div className="container-fluid color-nav2 navbar-property">
             <NavBar onAboutHandler={() => navigate("/about")} onSchoolProjectsHandler={() => navigate("/SchoolProjects")} 
-            onPersonalProjectsHandler={() => navigate("/PersonalProjects")} onContactHandler={() => () => 1}
+            onPersonalProjectsHandler={() => navigate("/PersonalProjects")} onContactHandler={() => navigate("/Contact")}
              onResumeHandler={() => navigate("/PersonalProjects")}/>
           </div>
         <div className="row ">
           <div className="col ">
             <div className="container">
-            <ProjectList ProjPoints={projPoints} Title="Thoughts" YTShowcaseLink="https://www.youtube.com/embed/zR-WfqmdfQE" ButtonsLists={buttons}/>
+            <ProjectList ProjPoints={projPoints} Title="Thoughts" YTShowcaseLink="https://www.youtube.com/embed/zR-WfqmdfQE" ButtonsLists={buttons} Overview="              Thoughts is a game I have been working on for the past year, it
+              started as a self improvement project, where it gave me a chance
+              to try and implement different gameplay mechanics."/>
             </div>
           </div>
         </div>

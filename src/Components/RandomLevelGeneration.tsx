@@ -1,9 +1,10 @@
 
-import levelGenShow from "../assets/LevelGenShow.mp4";
+
+import CloudinaryVideo from "./CloudinaryVideo";
 function RandomLevelGeneration() {
   return (
     <div className="project-desc-nav">
-      <video src={levelGenShow} autoPlay loop muted className="project-list-img"/>
+      <CloudinaryVideo styling="project-list-img" videoID="Thoughts_LevelGen"/>
       <p className="project-desc-text">
         I designed and implemented a random level generation system for
         "Thoughts," incorporating variables to enhance design flexibility. These
