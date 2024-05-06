@@ -70,7 +70,7 @@
 }
 .aboutme-header {
   width: 100%;
-
+  z-index: 1;
   margin-top: px;
   background-color:rgb(0, 74, 90)
 }
@@ -92,7 +92,7 @@
 .aboutme-desc {
 
   width:  100%;
-
+  z-index: 1;
   background-color:rgb(0, 74, 90)
 }
 @font-face {
@@ -452,7 +452,7 @@ cursor:pointer; */
 .player-wrapper {
   align-content: center;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
   min-height: 100px;
   
   max-height: 1080px;
