@@ -71,7 +71,6 @@
 .aboutme-header {
   width: 100%;
   z-index: 1;
-  margin-top: px;
   background-color:rgb(0, 74, 90)
 }
 .aboutme-pos {
@@ -84,7 +83,7 @@
 .aboutme-pos.expanded {
 
 
-  margin-top: -2%;
+  margin-top: -5%;
 
   transition: all 0.25s cubic-bezier(1,0,1,0);
 
