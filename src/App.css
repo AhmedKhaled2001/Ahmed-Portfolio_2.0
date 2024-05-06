@@ -393,7 +393,7 @@
 .navbar-property{
   position:fixed;
   overflow: hidden;
-  z-index: 1;
+  z-index: 150;
   width: 100%;
 
 
