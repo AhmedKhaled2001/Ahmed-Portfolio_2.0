@@ -83,14 +83,14 @@ function App({ launchCase }: Props) {
   };
   let PharmaCard: Card = {
     Name: "Die or Beat Big Pharma",
-    Tags: ["C++", "Blueprints", "Unreal Engine", "Finished"],
+    Tags: ["C++", "Blueprints", "Game Maker", "Finished"],
     Desc: "This game was my project for Alternative Game Development class",
     Background: DieOrBPBG,
     link: "../DORBP",
   };
   let QuantumBlitzCard: Card = {
     Name: "Quantum Blitz",
-    Tags: ["C++", "Blueprints", "Unreal Engine", "Finished"],
+    Tags: ["C++", "Blueprints", "Unreal Engine", "In Progress"],
     Desc: "This game was my project for Traditional Game Development class",
     Background: QBBG,
     link: "../QuantumBlitz",
@@ -121,7 +121,7 @@ function App({ launchCase }: Props) {
     <div className="mainContent color-nav">
       <div className="row">
         <div className="col">
-          <div className="mainContent color-nav2 navbar-property">
+          <div className=" color-nav2 navbar-property">
             <NavBar
               onAboutHandler={() => ScrollToSection(aboutRef)}
               onSchoolProjectsHandler={() => ScrollToSection(schoolPRef)}
@@ -142,8 +142,10 @@ function App({ launchCase }: Props) {
             <ReactPlayer 
               url="https://www.youtube.com/embed/XiqFFihOio4"
               playing={true}
-              height={"100vh"}
-              width={"100%"}
+              height= "80vw"
+              controls = {false}
+              width= "100vw"
+              playsinline
               loop
               muted
             />

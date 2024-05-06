@@ -26,6 +26,7 @@ function NavBar({
         <Link className="navbar-brand head-nav" to="../">
           <text className="text-nav">Ahmed Abdalla</text>
         </Link>
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 sec-nav">
             <li className="nav-item">

@@ -77,14 +77,15 @@
 .aboutme-pos {
 
 
-  margin-top: -18vh;
+  margin-top: -25%;
   transition: all 0.25s cubic-bezier(1,0,1,0);
 
 }
 .aboutme-pos.expanded {
 
 
-  margin-top: -2%;
+  margin-top: -3%;
+
   transition: all 0.25s cubic-bezier(1,0,1,0);
 
 }
@@ -164,10 +165,10 @@
 
 
 
-  margin-top: -5px;
+  margin-top: 2px;
   margin-bottom: 20px;
   text-align: center;
-  font-size:2.5vh;
+  font-size:2.2vh;
   color: white;
   font-family: "font";
 }
@@ -394,6 +395,8 @@
   overflow: hidden;
   z-index: 1;
   width: 100%;
+
+
   background-color:rgba(25, 24, 10, 0.6) ;
 }
 .navbar-icon{
@@ -409,25 +412,28 @@
 }
 .expandImg{
   pointer-events: all;
+/* min-width: 15px;
+max-width: 30px; */
+width: 4%;
+/* transform: scale(.2); */
+margin-bottom: 1vh;
 
-transform: scale(.1);
-margin-bottom: -110px;
-margin-top: -120px;
-margin-left: 27vw;
+margin-left: 48%;
 background-color: transparent;
 cursor:pointer;
 }
 .expandImg:hover{
+  transform: scale(1.5);
   pointer-events: all;
-
-transform: scale(.15);
-margin-bottom: -110px;
+/* 
+transform: scale(.15); */
+/* margin-bottom: -110px;
 margin-bottom: -100px;
 
 margin-top: -120px;
 margin-left: 40%;
 background-color: transparent;
-cursor:pointer;
+cursor:pointer; */
 }
 
 .testhover{
@@ -444,12 +450,24 @@ cursor:pointer;
   min-height: 100%;
 }
 .player-wrapper {
-  width: auto; 
+  align-content: center;
+  pointer-events: none;
   z-index: -1;
-  height: auto; 
+  min-height: 100px;
+  
+  max-height: 1080px;
+  min-width: 300px;
+  max-width: 1920px;
+  height: 55vw;
+  width: 100vh;
 }
 
 
 .react-player > div {
   position: absolute; 
+}
+.navbar-menu{
+  margin-right: 10px;
+  background-color: aliceblue;
+  z-index: 1;
 }
