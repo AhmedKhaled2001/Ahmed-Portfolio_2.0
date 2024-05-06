@@ -70,19 +70,19 @@
 }
 .aboutme-header {
   width: 100%;
+  z-index: 1;
   margin-top: px;
   background-color:rgb(0, 74, 90)
 }
 .aboutme-pos {
 
-  z-index: 50;
+
   margin-top: -25%;
   transition: all 0.25s cubic-bezier(1,0,1,0);
 
 }
 .aboutme-pos.expanded {
 
-  z-index: 50;
 
   margin-top: -2%;
 
@@ -92,6 +92,7 @@
 .aboutme-desc {
 
   width:  100%;
+  z-index: 1;
   background-color:rgb(0, 74, 90)
 }
 @font-face {
@@ -413,6 +414,7 @@
   pointer-events: all;
 /* min-width: 15px;
 max-width: 30px; */
+z-index: 100;
 width: 4%;
 /* transform: scale(.2); */
 margin-bottom: 1vh;
@@ -422,6 +424,8 @@ background-color: transparent;
 cursor:pointer;
 }
 .expandImg:hover{
+z-index: 100;
+
   transform: scale(1.5);
   pointer-events: all;
 /* 
