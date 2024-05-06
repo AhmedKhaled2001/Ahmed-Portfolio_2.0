@@ -84,7 +84,7 @@
 .aboutme-pos.expanded {
 
 
-  margin-top: -3%;
+  margin-top: -2%;
 
   transition: all 0.25s cubic-bezier(1,0,1,0);
 
@@ -412,6 +412,7 @@
 }
 .expandImg{
   pointer-events: all;
+  z-index: 1;
 /* min-width: 15px;
 max-width: 30px; */
 width: 4%;
