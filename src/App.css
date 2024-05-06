@@ -412,7 +412,6 @@
 }
 .expandImg{
   pointer-events: all;
-  z-index: 1;
 /* min-width: 15px;
 max-width: 30px; */
 width: 4%;
@@ -453,7 +452,7 @@ cursor:pointer; */
 .player-wrapper {
   align-content: center;
   pointer-events: none;
-  z-index: 0;
+  z-index: -10;
   min-height: 100px;
   
   max-height: 1080px;

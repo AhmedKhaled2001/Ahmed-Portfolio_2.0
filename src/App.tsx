@@ -145,6 +145,7 @@ function App({ launchCase }: Props) {
               height= "80vw"
               controls = {false}
               width= "100vw"
+              
               playsinline
               loop
               muted
