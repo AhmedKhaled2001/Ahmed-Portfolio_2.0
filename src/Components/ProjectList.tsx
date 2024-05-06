@@ -32,7 +32,7 @@ function ProjectList({ProjPoints, Title, YTShowcaseLink, ButtonsLists, Overview}
           </div>
         </div>
         <div className="row ">
-          <div className="col-flex">
+          <div className="col">
             <p className="project-list-desc ">
               {" "}
               {Overview}
@@ -41,7 +41,7 @@ function ProjectList({ProjPoints, Title, YTShowcaseLink, ButtonsLists, Overview}
           </div>
         </div>
         <div className="row ">
-          <div className="col-flex">
+          <div className="col">
             <p className="project-list-subheader "> Features </p>
           </div>
         </div>

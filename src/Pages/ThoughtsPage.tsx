@@ -44,6 +44,7 @@ function ThoughtsPage() {
   return (
     <div className=" ProjectPage">
 
+      {/* <video src={TBGV} className="vidBG" autoPlay loop muted></video> */}
       <CloudinaryVideo styling="vidBG" videoID="Thoughts_BG"/>
         <div className=" ProjectPageQB">
           <div className="container-fluid color-nav2 navbar-property">

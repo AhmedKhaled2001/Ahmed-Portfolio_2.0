@@ -33,13 +33,13 @@ function CloudinaryVideo({ videoID, styling }: Props) {
         }); 
 
         const myVideo = cld.video(videoID);
-        myVideo  .resize(scale().width(2040))
+        myVideo 
         .delivery(quality(autoBest()))
         .delivery(format(auto()));
 
 
   return (
-    <AdvancedVideo className = {styling} cldVid={myVideo} autoPlay loop muted plugins={[lazyload(), placeholder()]}/>
+    <AdvancedVideo className = {styling} cldVid={myVideo} playsInline controls = {false} autoPlay loop muted plugins={[lazyload(), placeholder()] }/>
     
   );
 }
