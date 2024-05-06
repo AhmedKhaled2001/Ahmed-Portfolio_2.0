@@ -83,7 +83,7 @@
 .aboutme-pos.expanded {
 
 
-  margin-top: -5%;
+  margin-top: -1vh;
 
   transition: all 0.25s cubic-bezier(1,0,1,0);
 
