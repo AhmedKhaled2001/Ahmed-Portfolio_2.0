@@ -1,7 +1,7 @@
 
 import {AdvancedVideo} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
-import {scale} from "@cloudinary/url-gen/actions/resize";
+// import {scale} from "@cloudinary/url-gen/actions/resize";
 
 import {auto, autoBest} from "@cloudinary/url-gen/qualifiers/quality";
 
