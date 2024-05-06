@@ -142,11 +142,10 @@ function App({ launchCase }: Props) {
             <ReactPlayer 
               url="https://www.youtube.com/embed/XiqFFihOio4"
               playing={true}
-              height= "80vw"
+              height= "70vw"
+              
               controls = {false}
               width= "100vw"
-              
-              playsinline
               loop
               muted
             />
