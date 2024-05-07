@@ -1,14 +1,14 @@
-import CollapsibleButton from "../Components/CollapsibleButton";
-import NavBar from "../Components/NavBar";
-import ProjectList from "../Components/ProjectList";
+import CollapsibleButton from "./Components/CollapsibleButton";
+import NavBar from "./Components/NavBar";
+import ProjectList from "./Components/ProjectList";
 import { useNavigate } from "react-router-dom";
-import RandomLevelGeneration from "../Components/RandomLevelGeneration";
-import EnemyAI from "../Components/EnemyAI";
-import CombatSystem from "../Components/CombatSystem";
-import ProgressionSystem from "../Components/ProgressionSystem";
-import UI from "../Components/UI";
-import EnemySpawningSystem from "../Components/EnemySpawningSystem";
-import CloudinaryVideo from "../Components/CloudinaryVideo";
+import RandomLevelGeneration from "./Components/RandomLevelGeneration";
+import EnemyAI from "./Components/EnemyAI";
+import CombatSystem from "./Components/CombatSystem";
+import ProgressionSystem from "./Components/ProgressionSystem";
+import UI from "./Components/UI";
+import EnemySpawningSystem from "./Components/EnemySpawningSystem";
+import CloudinaryVideo from "./Components/CloudinaryVideo";
 
 type PP = 
 {

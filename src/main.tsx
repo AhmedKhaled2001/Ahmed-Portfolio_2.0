@@ -7,9 +7,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import ThoughtsPage from './Pages/ThoughtsPage.tsx'
-import DoBPPage from './Pages/DoBPPage.tsx'
-import QuantumBlitzPage from './Pages/QuantumBlitzPage.tsx'
+import ThoughtsPage from './ThoughtsPage.tsx'
+import DoBPPage from './DoBPPage.tsx'
+import QuantumBlitzPage from './QuantumBlitzPage.tsx'
 
 const router = createBrowserRouter([
   {

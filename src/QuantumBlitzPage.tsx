@@ -1,15 +1,15 @@
-import CollapsibleButton from "../Components/CollapsibleButton";
-import NavBar from "../Components/NavBar";
-import ProjectList from "../Components/ProjectList";
+import CollapsibleButton from "./Components/CollapsibleButton";
+import NavBar from "./Components/NavBar";
+import ProjectList from "./Components/ProjectList";
 import { useNavigate } from "react-router-dom";
-import QB_GameSystems from "../Components/QB_GameSystems";
-import QB_CombatSystem from "../Components/QB_CombatSystem";
-import QB_Portals from "../Components/QB_Portals";
-import QB_AnimationState from "../Components/QB_AnimationState";
+import QB_GameSystems from "./Components/QB_GameSystems";
+import QB_CombatSystem from "./Components/QB_CombatSystem";
+import QB_Portals from "./Components/QB_Portals";
+import QB_AnimationState from "./Components/QB_AnimationState";
 
 
 
-import CloudinaryVideo from "../Components/CloudinaryVideo";
+import CloudinaryVideo from "./Components/CloudinaryVideo";
 
 
 

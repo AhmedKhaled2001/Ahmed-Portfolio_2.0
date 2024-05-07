@@ -1,11 +1,11 @@
-import CollapsibleButton from "../Components/CollapsibleButton";
-import NavBar from "../Components/NavBar";
-import ProjectList from "../Components/ProjectList";
+import CollapsibleButton from "./Components/CollapsibleButton";
+import NavBar from "./Components/NavBar";
+import ProjectList from "./Components/ProjectList";
 import { useNavigate } from "react-router-dom";
-import DOBP_Movement from "../Components/DOBP_Movement";
-import DOBP_Pickups from "../Components/DOBP_Pickups";
-import DOBP_AnimationState from "../Components/DOBP_AnimationState";
-import CloudinaryVideo from "../Components/CloudinaryVideo";
+import DOBP_Movement from "./Components/DOBP_Movement";
+import DOBP_Pickups from "./Components/DOBP_Pickups";
+import DOBP_AnimationState from "./Components/DOBP_AnimationState";
+import CloudinaryVideo from "./Components/CloudinaryVideo";
 
 
 type PP = 
