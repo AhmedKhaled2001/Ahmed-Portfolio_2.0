@@ -17,15 +17,15 @@ const router = createBrowserRouter([
     element: <App launchCase={0}/>,
   },
   {
-    path:"Thoughts",
+    path:"/Thoughts",
     element: <ThoughtsPage/>,
   },
   {
-    path:"DORBP",
+    path:"/DORBP",
     element: <DoBPPage/>,
   },
   {
-    path:"QuantumBlitz",
+    path:"/QuantumBlitz",
     element: <QuantumBlitzPage/>,
   },
   {
