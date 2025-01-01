@@ -219,7 +219,7 @@ function App({ launchCase }: Props) {
         <div className="col  aboutme-desc">
           <div className="container ">
             <h1 className="aboutme-descText">
-              At 22 years old, I'm a game developer originally from Egypt. My journey in the world
+              At 23 years old, my journey in the world
               of game development began with a deep passion for creating
               immersive experiences . I'm currently studying Computer Science
               with a focus on game development at the University of Utah, and I'll be graduating in May
@@ -227,10 +227,10 @@ function App({ launchCase }: Props) {
               engines, including Unreal Engine 5, Unity, and GameMaker . Games,
               for me, are a way to express my creativity and connect with people
               on a global scale. I'm excited about the possibilities that lie
-              ahead and look forward t o a career that combines my skills as a
+              ahead and look forward to a career that combines my skills as a
               game developer and a software engineer to make a positive impact
               in the gaming industry. Below you can see the projects I have
-              worked on. I'm currently looking for internship opportunities as well as working on my solo project "Thoughts"
+              worked on. I'm currently looking for opportunities to join the industry as well as working on the second half of my capstone project "Hermes Runner"
             </h1>
           </div>
         </div>
