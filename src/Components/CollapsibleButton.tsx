@@ -10,8 +10,8 @@ function CollapsibleButton({ buttonContent, buttonName }: Props) {
     else setSelected(false);
   };
   return (
-    <div onClick={() => toggle()}>
-      <div className="colButton">
+    <div>
+      <div className="colButton "  onClick={() => toggle()}>
         <p className="colButtonText">{buttonName} </p>
         <span className="colButtonIndicator">
           {" "}

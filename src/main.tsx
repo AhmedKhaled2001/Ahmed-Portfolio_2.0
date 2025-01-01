@@ -10,6 +10,7 @@ import {
 import ThoughtsPage from './ThoughtsPage.tsx'
 import DoBPPage from './DoBPPage.tsx'
 import QuantumBlitzPage from './QuantumBlitzPage.tsx'
+import HermesRunnerPage from './HermesRunnerPage.tsx'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path:"/QuantumBlitz",
     element: <QuantumBlitzPage/>,
+  },
+  {
+    path:"/HermesRunner",
+    element: <HermesRunnerPage/>,
   },
   {
     path:"/About",

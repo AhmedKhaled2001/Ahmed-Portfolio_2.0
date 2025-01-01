@@ -2,14 +2,18 @@ import { useState } from "react";
 import Tag from "./Tag";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import CheckList from "./Checklist";
 interface Props {
   tags: String[];
   desc: String;
   icon: string;
   onClickLink: string;
+  checkListIcon:string;
+  checklistItems:string[];
+  
 }
 
-function ProjectCard({ tags, desc, icon, onClickLink}: Props) {
+function ProjectCard({ tags, desc, icon, onClickLink, checkListIcon, checklistItems}: Props) {
   const [isSelected, setSelected] = useState(false);
   function selectedClass() {
     if (isSelected && isSelected != null) return "img-border-hovered";
@@ -48,10 +52,9 @@ function ProjectCard({ tags, desc, icon, onClickLink}: Props) {
       <div className="container card-desc">
         <div className="">
         <p className="card-desctxt">{desc}</p>
-
         </div>
       </div>
-
+      <CheckList icon = {checkListIcon} items={checklistItems}/> 
     </motion.ul>
   );
 }

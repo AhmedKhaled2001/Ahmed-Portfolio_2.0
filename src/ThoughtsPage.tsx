@@ -33,7 +33,7 @@ function ThoughtsPage() {
     buttonName="Combat System"
   />,
   <CollapsibleButton
-    buttonContent={<ProgressionSystem />}
+    buttonContent={<ProgressionSystem/>}
     buttonName="Progression System"
   />,
   <CollapsibleButton

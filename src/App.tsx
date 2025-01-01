@@ -7,8 +7,10 @@ import "./fonts/Dosis-Light.ttf";
 import "./fonts/Dosis-Medium.ttf";
 import "./fonts/Dosis-Regular.ttf";
 import ThoughtsBG from "./assets/ThoughtsCardBack.png";
+import HermesBG from "./assets/HermesBG.png";
 import DieOrBPBG from "./assets/DBPBG.png";
 import QBBG from "./assets/QBBG.png";
+import ChecklistIcon from "./assets/send-message.png";
 import LinkedinIcon from "./assets/linkedin-app-icon.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -25,6 +27,8 @@ type Card = {
   Desc: String;
   Background: string;
   link: string;
+  checkListIcon: string;
+  checkListItems: string[];
 };
 
 interface Props {
@@ -76,26 +80,67 @@ function App({ launchCase }: Props) {
   }
   let ThoughtsCard: Card = {
     Name: "Thoughts",
-    Tags: ["C++", "Blueprints", "Unreal Engine", "In Progress"],
+    Tags: ["Solo", "Blueprints", "Unreal Engine", "In Progress"],
     Desc: "Thoughts is a game I have been solo developing for the past year and a half, using Unreal Engine 4/5",
     Background: ThoughtsBG,
     link: "../Thoughts",
+    checkListIcon: ChecklistIcon,
+    checkListItems: 
+    [
+      "Learned a lot about design patterns and general best practices", 
+      "Worked solo on the project, which made me experiment with a lot of different areas of game development such as \
+      such as sound design, UI/UX, game design, etc... ",
+      "Attempted and iterated on more complex gameplay mechanics such as procedural generation, Modular AI implementation",
+      "Long term educational project"
+    ],
+  };
+  let HermesRunnerCard: Card = {
+    Name: "Hermes' Runner ",
+    Tags: ["Engineer", "Designer", "Unreal Engine", "In Progress"],
+    Desc: "This is my Capstone Project, where I'm currently working on the game as a Movement System Engineering Team Lead, a General Engineer, and a Designer. Hermes Runner is a movement game set in \
+    a modern greek mythology world.",
+    Background: HermesBG,
+    link: "../HermesRunner",
+    checkListIcon: ChecklistIcon,
+    checkListItems: ["Lead a team of 8 people",
+                      "Experimented and came up with different design patterns",
+                      "Implemented movement mechanics such as mantling, rail grinding, etc...",
+                      "Designed the movement system code by breaking the system into sub-systems",
+                      "Setup and implemented smaller sub-systems such as a camera manager, a speed manager, a player state manger, etc.... ",
+                      "Implemented player feedback UI, such as a quest log, and a summary screen",
+                      "Experimented with Unreal Engine's Motion Matching system"
+                      ],
   };
   let PharmaCard: Card = {
     Name: "Die or Beat Big Pharma",
-    Tags: ["C++", "Blueprints", "Game Maker", "Finished"],
+    Tags: ["Engineer", "GML", "Game Maker", "Finished"],
     Desc: "This game was my project for Alternative Game Development class",
     Background: DieOrBPBG,
     link: "../DORBP",
+    checkListIcon: ChecklistIcon,
+    checkListItems: 
+    [
+      "Worked with GameMaker for the first time", 
+      "Made a 2D movement system",
+      "Made an animation state machine"
+    ],
+    
   };
   let QuantumBlitzCard: Card = {
     Name: "Quantum Blitz",
-    Tags: ["C++", "Blueprints", "Unreal Engine", "In Progress"],
+    Tags: ["Engineer", "Blueprints", "Unreal Engine", "In Progress"],
     Desc: "This game was my project for Traditional Game Development class",
     Background: QBBG,
     link: "../QuantumBlitz",
+    checkListIcon: ChecklistIcon,
+    checkListItems: 
+    [
+      "Built a combat system with multiple inputs", 
+      "Built the movement system with retargeted animations",
+      "Made other gameplay systems like portals, determining win conditions, and local multiplayer"
+    ],
   };
-  let schoolProjects: Card[] = [PharmaCard, QuantumBlitzCard];
+  let schoolProjects: Card[] = [PharmaCard, HermesRunnerCard,QuantumBlitzCard];
   let PersonalProjects: Card[] = [ThoughtsCard];
 
   const aboutRef = useRef(null);
@@ -140,7 +185,7 @@ function App({ launchCase }: Props) {
             </div> */}
             <div className="player-wrapper">
             <ReactPlayer 
-              url="https://www.youtube.com/embed/XiqFFihOio4"
+              url="https://www.youtube.com/embed/tMaZ5BoUlQ8"
               playing={true}
               height= "70vw"
               
@@ -192,64 +237,68 @@ function App({ launchCase }: Props) {
       </div>
       </div>
       <div className="row ">
-        <div className="col schoolprojects-header">
-          <div className="container ">
-            <h1 ref={personalPRef} className="aboutme-headerText ">
-              {" "}
-              Personal Projects{" "}
-            </h1>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        {PersonalProjects.map((item) => (
-          <div className="col  personalprojects-div">
-            <div className="container card-div">
+  <div className="col schoolprojects-header">
+    <div className="container ">
+      <h1 ref={schoolPRef} className="aboutme-headerText">
+        {" "}
+        School Projects{" "}
+      </h1>
+    </div>
+  </div>
+</div>
+<div className="row schoolprojects-header ">
+  <div className="row">
+    <div className="col ">
+      <div className="row schoolprojectcards-header">
+        {schoolProjects.map((item) => (
+          <div className="col ">
+            <div className="container card-div ">
               <ProjectCard
                 tags={item.Tags}
                 desc={item.Desc}
                 icon={item.Background}
                 onClickLink={item.link}
+                checkListIcon={item.checkListIcon}
+                checklistItems={item.checkListItems}
               />
             </div>
           </div>
         ))}
       </div>
-      <div className="row">
-        <div className="col schoolprojects-header">
-          <div className="container">
-            <h1 ref={schoolPRef} className="aboutme-headerText">
-              {" "}
-              School Projects{" "}
-            </h1>
-          </div>
-        </div>
+    </div>
+  </div>
+</div>
+<div className="row ">
+  <div className="col schoolprojects-header">
+    <div className="container ">
+      <h1 ref={personalPRef} className="aboutme-headerText ">
+        {" "}
+        Personal Projects{" "}
+      </h1>
+    </div>
+  </div>
+</div>
+<div className="row">
+  {PersonalProjects.map((item) => (
+    <div className="col  personalprojects-div">
+      <div className="container card-div">
+        <ProjectCard
+          tags={item.Tags}
+          desc={item.Desc}
+          icon={item.Background}
+          onClickLink={item.link}
+          checkListIcon={item.checkListIcon}
+          checklistItems={item.checkListItems}
+        />
       </div>
-      <div className="row schoolprojects-header ">
-        <div className="row">
-          <div className="col ">
-            <div className="row schoolprojectcards-header">
-              {schoolProjects.map((item) => (
-                <div className="col ">
-                  <div className="container card-div ">
-                    <ProjectCard
-                      tags={item.Tags}
-                      desc={item.Desc}
-                      icon={item.Background}
-                      onClickLink={item.link}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+  ))}
+</div>
       
 
-      <div className="row" ref = {contactRef}>
+      <div className="row " ref = {contactRef}>
         <div className="col  aboutme-header">
-          <div className="container ">
+          <div className="container aboutme-row">
             <h1 className="contact-headerText">
               Contact
             </h1>

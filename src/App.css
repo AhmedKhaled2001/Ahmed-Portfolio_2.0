@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+project-desc-text
 .color-nav {
   background-color:rgb(0, 0, 0);
 }
@@ -73,6 +75,9 @@
   z-index: 1;
   background-color:rgb(0, 74, 90)
 }
+/* .aboutme-row{
+  margin-top: 10%;
+} */
 .aboutme-pos {
 
 
@@ -103,7 +108,7 @@
   margin-top: 10px;
   text-align: center;
   font-weight: 300;
-
+  
   font-size:4vh;
   color: white;
   font-family: "font";
@@ -120,7 +125,7 @@
 
 
   background-color:rgb(25, 25, 25);
- 
+
   margin-top: 0px;
 }
 .schoolprojects-div{
@@ -134,10 +139,10 @@
 .schoolprojectcards-header{
   
 
-  max-height: 1350px;
-  min-height: 600px;
+  height: 100%;
+  width: 100vw;
   background-color:rgb(19, 19, 19);
-  margin-top: 10px;
+  margin-top: 0px;
 
 
 }
@@ -163,13 +168,13 @@
 .aboutme-descText {
 
 
-
+  font-weight: 300;
   margin-top: 2px;
   margin-bottom: 20px;
   text-align: center;
-  font-size:2.2vh;
+  font-size:2vh;
   color: white;
-  font-family: "font";
+  font-family: "Raleway", serif;
 }
 .tag-background {
 
@@ -186,7 +191,7 @@
 }
 .text-tag {
 
-
+  white-space: pre;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size:100%;
@@ -194,14 +199,12 @@
 
 .tag-container{
 
-
   display:flex;
-  
   padding-top: 3px;
 }
 .card-desc{
   
-  margin-top: -15px;
+  margin-top: -5px;
   margin-left: -0px;
 
 
@@ -212,7 +215,7 @@
 
   color:rgb(255, 255, 255);
   font-weight: 300;
-  font-family:"font";
+  font-family: "Raleway", serif;
 }
 .card-div{
   margin-top: 50px;
@@ -343,9 +346,13 @@
   padding-left: 1%;
   border-radius: 10px;
   margin-bottom: 10px;
+  border-width: 3px;
   min-height: 25px;
+  border-style: solid;
   cursor: pointer;
-  background-color: rgb(29, 29, 29);
+  border-color: rgb(116, 116, 116);
+
+  background-color: rgb(22, 22, 22);
 }
 .colButtonText{
   color: aliceblue;
@@ -374,13 +381,31 @@
   height: 100%;
   width: 100%;
 }
+.margin-left-2{
+  margin-left: 2vw;
+}
+.margin-left-1{
+  margin-left: 1vw;
+}
+.inlineText {
+  white-space: pre;
+
+}
 .project-desc-text{
   color: aliceblue;
-  font-size: 16px;
+  /* font-size: 16px;
   font-weight: 400;
-  font-family: "font";
+  font-family: "font"; */
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   text-align: left;
+ 
   margin-right: 20px;
+}
+.bold{
+  font-weight: 800;
 }
 .project-desc-nav{
   max-width: 97.5%;
@@ -472,4 +497,47 @@ cursor:pointer; */
   margin-right: 10px;
   background-color: aliceblue;
   z-index: 1;
+}
+.checklist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10%;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start; /* Ensures proper alignment */
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* Allows content to wrap */
+}
+
+.checklist-icon {
+  flex-shrink: 0; /* Icon maintains its size */
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+.checklist-text {
+  color: white;
+  font-family: "Raleway", serif;
+  flex: 1; /* Text takes up remaining space */
+  font-size: 15px;
+  word-wrap: break-word; /* Ensures long words wrap */
+  white-space: normal; /* Explicitly allows wrapping */
+  overflow-wrap: break-word; /* Handles long, unbreakable words */
+  
+}
+.projlist-img-container{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+}
+.projlist-img-center{
+  max-width: 100%;  
 }
