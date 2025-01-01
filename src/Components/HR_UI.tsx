@@ -1,5 +1,5 @@
 import SC1 from "../assets/UI1.png";
-import SC2 from "../assets/UI2.png";
+import SC2 from "../assets/ui2.png";
 import SC3 from "../assets/UI3.png";
 
 
