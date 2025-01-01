@@ -3,8 +3,7 @@ import NavBar from "./Components/NavBar";
 import ProjectList from "./Components/ProjectList";
 import { useNavigate } from "react-router-dom";
 import HR_MovementSystem from "./Components/HR_MovementSystem";
-import QB_Portals from "./Components/QB_Portals";
-import HR_UI from "./Components/HR_ui";
+import HR_UI from "./Components/HR_UI";
 import HR_TeamLead from "./Components/HR_TeamLead";
 
 
