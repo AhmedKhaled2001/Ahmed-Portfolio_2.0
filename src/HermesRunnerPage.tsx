@@ -30,7 +30,7 @@ function QuantumBlitzPage() {
 
 
   
-  let Overview = "I'm currently working as a movement system engineering team lead (8 people), and a designer. Hermes' Runner is a 3D movement based open level parkour game, where the player can run around using Hermes' boots, deface billboards, and deliveries in a reimagined 2000s Greek city, where the gods are real and they own everything. "
+  let Overview = "I'm currently working as a movement system engineering team lead (8 people), and a designer. Hermes' Runner is a 3D movement based open level parkour game, where the player can run around using Hermes' boots, deface billboards, and deliveries in a reimagined 2000s Greek city, where the gods are real and they own everything. Update (3/19/2025): A lot of work has been done on the game since then check out our early access now on STEAM https://store.steampowered.com/app/3536730/Hermes_Runner/ "
   let projPoints : PP = 
   {
     projectProgress : "In Progress", projectType: "School Captsone Project", TeamSize: "32", techUsed : "Unreal Engine 5.5 Blueprints"

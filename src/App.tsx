@@ -108,7 +108,7 @@ function App({ launchCase }: Props) {
                       "Designed the movement system code by breaking the system into sub-systems",
                       "Setup and implemented smaller sub-systems such as a camera manager, a speed manager, a player state manger, etc.... ",
                       "Implemented player feedback UI, such as a quest log, and a summary screen",
-                      "Experimented with Unreal Engine's Motion Matching system"
+                      "Implemented animations using Unreal Engine's Motion Matching system"
                       ],
   };
   let PharmaCard: Card = {
