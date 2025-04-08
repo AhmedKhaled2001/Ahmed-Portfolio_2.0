@@ -185,7 +185,7 @@ function App({ launchCase }: Props) {
             </div> */}
             <div className="player-wrapper">
             <ReactPlayer 
-              url="https://www.youtube.com/embed/tMaZ5BoUlQ8"
+              url="https://www.youtube.com/embed/GlrHINHm0g0"
               playing={true}
               height= "70vw"
               
