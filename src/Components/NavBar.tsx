@@ -71,7 +71,7 @@ function NavBar({
               <a
                 className="text-nav1"
                 target="_blank" rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1bAVjQZgcejLbL65kr4DxQBiK8bTS7ejy/view?usp=sharing"
+                href="https://drive.google.com/file/d/1H7BN-ZB_qrXh3RipQvaf2VQVsCpD4HEG/view?usp=sharing"
               >
                 Resume
               </a>

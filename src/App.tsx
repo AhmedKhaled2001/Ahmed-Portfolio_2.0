@@ -80,7 +80,7 @@ function App({ launchCase }: Props) {
   }
   let ThoughtsCard: Card = {
     Name: "Thoughts",
-    Tags: ["Solo", "Blueprints", "Unreal Engine", "In Progress"],
+    Tags: ["Solo", "Blueprints", "Unreal Engine", "Finished"],
     Desc: "Thoughts is a game I have been solo developing for the past year and a half, using Unreal Engine 4/5",
     Background: ThoughtsBG,
     link: "../Thoughts",
@@ -96,7 +96,7 @@ function App({ launchCase }: Props) {
   };
   let HermesRunnerCard: Card = {
     Name: "Hermes' Runner ",
-    Tags: ["Engineer", "Designer", "Unreal Engine", "In Progress"],
+    Tags: ["Engineer", "Designer", "Unreal Engine", "Finished"],
     Desc: "This is my Capstone Project, where I'm currently working on the game as a Movement System Engineering Team Lead, a General Engineer, and a Designer. Hermes Runner is a movement game set in \
     a modern greek mythology world.",
     Background: HermesBG,
@@ -128,7 +128,7 @@ function App({ launchCase }: Props) {
   };
   let QuantumBlitzCard: Card = {
     Name: "Quantum Blitz",
-    Tags: ["Engineer", "Blueprints", "Unreal Engine", "In Progress"],
+    Tags: ["Engineer", "Blueprints", "Unreal Engine", "Finished"],
     Desc: "This game was my project for Traditional Game Development class",
     Background: QBBG,
     link: "../QuantumBlitz",
@@ -219,18 +219,7 @@ function App({ launchCase }: Props) {
         <div className="col  aboutme-desc">
           <div className="container ">
             <h1 className="aboutme-descText">
-              At 23 years old, my journey in the world
-              of game development began with a deep passion for creating
-              immersive experiences . I'm currently studying Computer Science
-              with a focus on game development at the University of Utah, and I'll be graduating in May
-              2025. I've had the privilege of working with various game
-              engines, including Unreal Engine 5, Unity, and GameMaker . Games,
-              for me, are a way to express my creativity and connect with people
-              on a global scale. I'm excited about the possibilities that lie
-              ahead and look forward to a career that combines my skills as a
-              game developer and a software engineer to make a positive impact
-              in the gaming industry. Below you can see the projects I have
-              worked on. I'm currently looking for opportunities to join the industry as well as working on the second half of my capstone project "Hermes Runner"
+            I am a Gameplay Programmer and current Master’s student in Computer Science at Norfolk State University, blending a strong foundation in C++ and systems engineering with a passion for building immersive 3D experiences. After completing my Bachelor's with an emphasis in games at the University of Utah, I served as the Movement System Engineering Team Lead for Hermes Runner, culminating in a successful Steam release. I specialize in engineering modular, scalable architectures in Unreal Engine 5 that empower cross-disciplinary teams to iterate quickly. Currently, I am seeking a Summer 2027 Software Engineering internship where I can leverage my prototyping skills and passion for responsive game feel to build impactful titles.
             </h1>
           </div>
         </div>
